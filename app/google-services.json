@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "71343558887",
+    "firebase_url": "https://teak-etching-157017.firebaseio.com",
+    "project_id": "teak-etching-157017",
+    "storage_bucket": "teak-etching-157017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71343558887:android:e63f1e87344ba527",
+        "android_client_info": {
+          "package_name": "com.home.khalil.opendata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71343558887-q6einjc8q9eilo5nj1mss6mmulj5cddn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.home.khalil.opendata",
+            "certificate_hash": "e1da57b2ad197c2182bb839877139d090b3dcbd2"
+          }
+        },
+        {
+          "client_id": "71343558887-9739ra2h98c2nh6aeijihrae4h8kg5pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFwh-KbPTnZgohSq1fHVNe41pbtoY6vt0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71343558887-9739ra2h98c2nh6aeijihrae4h8kg5pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

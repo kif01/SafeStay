@@ -1,0 +1,175 @@
+<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/card_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+card_view:cardUseCompatPadding="true"
+android:foreground="?android:attr/selectableItemBackground"
+android:paddingBottom="18dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/accomodation_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/pic"
+
+
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/name"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Charming Flat With Gorgeous View"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/accomodation_image"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/accomodation_image"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+
+        android:drawableLeft="@drawable/ic_price"
+        android:textSize="18sp"
+
+
+        />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="London, Westminster"
+        android:layout_below="@+id/name"
+        android:drawablePadding="5dp"
+        android:id="@+id/location"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_location"
+
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apartment"
+        android:id="@+id/accomodation_type"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/ic_accomodation"
+        android:textSize="15dp"
+        android:drawablePadding="5dp"
+        />
+
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+
+        android:layout_toRightOf="@+id/accomodation_type"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="3dp"
+        android:drawableLeft="@drawable/ic_rate"
+        android:text="4.3"
+
+        android:drawablePadding="5dp"
+
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="2"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="8dp"
+        android:drawablePadding="5dp"
+        android:id="@+id/guestNum"
+        android:drawableLeft="@drawable/ic_guest"
+        />
+
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/bedroom"
+        android:text="2"
+        android:drawablePadding="5dp"
+        android:layout_marginRight="8dp"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_bedroom"
+        android:layout_below="@+id/location"
+
+        android:layout_toLeftOf="@+id/guestNum"
+
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/location"
+        android:layout_toLeftOf="@+id/bedroom"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_bathroom"
+        android:text="1"
+
+        android:id="@+id/bathroom"
+        android:drawablePadding="5dp"
+        android:textSize="15sp"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

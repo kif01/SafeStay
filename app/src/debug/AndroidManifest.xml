@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.home.khalil.opendata.AccommodationDetails"
+            android:label="@string/title_activity_accommodation__details"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+</manifest>

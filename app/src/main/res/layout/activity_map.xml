@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ProgressBar
+
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.opendata.MapActivity" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/view"
+        android:layoutDirection="rtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        android:layout_margin="16dp"
+         />
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/fab_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            map:backgroundTint="@color/colorPrimaryDark"
+            map:fabSize="mini"
+            android:visibility="invisible"
+            android:src="@drawable/ic_world"
+           android:layout_margin="16dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            map:fabSize="mini"
+
+            map:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_list"
+            android:layout_marginLeft="16dp"
+            android:layout_margin="16dp"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

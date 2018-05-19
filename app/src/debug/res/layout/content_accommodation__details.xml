@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.home.khalil.opendata.AccommodationDetails"
+    tools:showIn="@layout/activity_accommodation__details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+       android:id="@+id/detail_name"
+        android:textColor="@android:color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Charming Flat With Gorgeous View"
+        />
+
+        <!--<ImageButton
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_like"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+           android:layout_above="@+id/view"
+            />-->
+
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view"
+            android:layout_below="@+id/detail_name"
+           android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            />
+
+
+
+
+
+        <RatingBar
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/detail_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:isIndicator="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_below="@+id/view"
+            android:rating="4.5"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_rating_value"
+            android:text="4.5"
+           android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/view"
+
+           android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@+id/detail_rating_bar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:id="@+id/detail_price"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_price"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London, Westminster"
+            android:layout_below="@+id/detail_rating_bar"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:id="@+id/detail_location"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_location"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartment"
+            android:id="@+id/detail_type"
+            android:layout_below="@+id/detail_location"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_accomodation"
+            android:textSize="15dp"
+            android:drawablePadding="5dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="2"
+            android:layout_below="@+id/detail_location"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="8dp"
+            android:drawablePadding="5dp"
+            android:id="@+id/detail_guestNum"
+            android:drawableLeft="@drawable/ic_guest"
+            />
+
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:id="@+id/detail_bedroom"
+            android:text="2"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_bedroom"
+            android:layout_below="@+id/detail_location"
+            android:layout_toLeftOf="@+id/detail_guestNum"
+
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/detail_location"
+            android:layout_toLeftOf="@+id/detail_bedroom"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_bathroom"
+            android:text="1"
+
+            android:id="@+id/detail_bathroom"
+            android:drawablePadding="5dp"
+            android:textSize="15sp"
+
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Summary"
+            android:layout_below="@+id/detail_type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_below="@+id/text"
+            android:text="dghfgkhfgjdkgkhkfjfjhgfkjfg"
+            android:id="@+id/quick_summary"
+            android:textSize="16sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
